@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Lecture 1",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture1_tensors/mainl1.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Lecture 2",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture2_Operations/mainl2.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Lecture 3",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture3_Automations/mainl3.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
