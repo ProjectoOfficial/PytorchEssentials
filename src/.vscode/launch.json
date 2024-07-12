@@ -20,6 +20,20 @@
             "request": "launch",
             "program": "Lecture3_Automations/mainl3.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Lecture 4",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture4_Backpropagation/mainl4.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Lecture 5",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture5_nn/mainl5.py",
+            "console": "integratedTerminal"
         }
     ]
 }
