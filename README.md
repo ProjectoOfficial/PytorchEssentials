@@ -4,6 +4,9 @@
 - Lecture 1: What is a Tensor and how to create it in different ways and on different devices
 - Lecture 2: What kind of operations are supported beween Tensors
 - Lecture 3: Pytorch automations under the hood. Don't reinvent the wheel!
+- Lecture 4: How to optimize parameters through Backpropagation and Gradient Descent
+- Lecture 5: Speedup Neural Network creation through torch.nn
+- Lecture 6: Manage Vision data thanks to Torchvision
 
 ## Docker setup
 I switched from Anaconda to Docker in order to provide the possibility to run the code on any kind of machine. Futhermore, docker is a tool which can improve the portability and the maintainability of the code within your business, thus this could also be an excuse to learn it.
