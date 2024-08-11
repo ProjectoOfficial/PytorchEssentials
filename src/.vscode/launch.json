@@ -34,6 +34,16 @@
             "request": "launch",
             "program": "Lecture5_nn/mainl5.py",
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Lecture 6",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture6_Torchvision/mainl6.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--batch-size", "256"
+            ]
         }
     ]
 }
