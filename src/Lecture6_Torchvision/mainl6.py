@@ -9,6 +9,9 @@ from torch.utils.data import DataLoader
 from torchvision.datasets import MNIST
 import torchvision.transforms as T
 
+from tqdm import tqdm
+import logging
+
 # Let's define a basic Linear network with 1024 as hidden dimension
 # We use batch normalization, which normalizes tensors along the batch dimension
 # to help the model to better generalize
@@ -49,6 +52,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+
+    logging.basicConfig(filename="Lecture6_Torchvision/training.log", level=logging.INFO)
 
     # A transform is always applied on data. Here first we transform an input image to tensor
     # since we will work then with tensors; then we normalize this tensor to lay in [-1, 1]
@@ -85,8 +91,14 @@ if __name__ == "__main__":
     model = LinearNet(in_channels=784, out_classes=10).to(device)
     criterion = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+   
+    numParameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
+    logging.info(f"Model has {numParameters} parameters")
+    logging.info(model)
+
 
     print("Training started!")
+    pbar = tqdm(total=args.epochs, desc=f"EPOCH: 0 - running ...")
     for e in range(args.epochs):
         avg_loss = 0
 
@@ -117,7 +129,8 @@ if __name__ == "__main__":
                 correct += (predicted == labels).sum().item()
 
         accuracy = 100 * correct / total
-        print(f"EPOCH: {e}: average loss is {avg_loss}, while accuracy is {accuracy}")
-
-
+        message = f"EPOCH: {e}: average loss is {avg_loss}, while accuracy is {accuracy}"
+        pbar.set_description(message)
+        logging.info(message)
+        pbar.update(1)
 
