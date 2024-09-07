@@ -1,3 +1,20 @@
+###############################################################################
+# 
+# Lecture 4 on Pytorch: Backpropagation
+#
+# This script shows how to create a simple linear network to perform regression.
+# We use the nn.Module class to define the network and the forward method to
+# define the forward pass. We also define a training loop to train the network.
+# We use the autograd to calculate the gradients of the loss with respect to the weights.
+# We the manually optimize the network to update the weights based on the gradients.
+#
+# Link: https://www.youtube.com/watch?v=vMGmyZAYR24
+# Link: https://projectoofficial.github.io/
+#
+# @author: Daniel - PhD Candidate in ICT @ AImageLab
+# 
+###############################################################################
+
 import torch
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

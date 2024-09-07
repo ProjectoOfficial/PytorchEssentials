@@ -44,6 +44,16 @@
             "args": [
                 "--batch-size", "256"
             ]
+        },
+        {
+            "name": "Lecture 7",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "Lecture7_Convolutions/mainl7.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--batch-size", "256"
+            ]
         }
     ]
 }

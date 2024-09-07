@@ -1,8 +1,21 @@
+###############################################################################
+# 
+# Lecture 5 on Pytorch: Neural Networks
+#
+# This script shows how to create a simple linear network to perform regression.
+# We use the nn.Module class to define the network and the forward method to 
+# define the forward pass. We also define a training loop to train the network.
+#
+# Link: https://www.youtube.com/watch?v=vMGmyZAYR24
+# Link: https://projectoofficial.github.io/
+#
+# @author: Daniel - PhD Candidate in ICT @ AImageLab
+# 
+###############################################################################
+
 import torch
 from torch import nn
 import torch.optim as optim
-
-
 
 # A neural network is defined as a class that inherits from nn.Module
 # The class has two main methods: __init__ and forward

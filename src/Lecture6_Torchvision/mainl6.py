@@ -1,3 +1,18 @@
+###############################################################################
+# 
+# Lecture 6 on Pytorch: Torchvision
+#
+# This script shows how to create a simple linear network to classify the MNIST dataset.
+# We use the torchvision library to download and load the dataset, and to apply transformations.
+# We also use the DataLoader to create an iterable object that provides the data in batches.
+#
+# Link: https://www.youtube.com/watch?v=vMGmyZAYR24
+# Link: https://projectoofficial.github.io/
+#
+# @author: Daniel - PhD Candidate in ICT @ AImageLab
+# 
+###############################################################################
+
 import argparse
 
 import torch
