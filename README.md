@@ -7,6 +7,7 @@
 - Lecture 4: How to optimize parameters through Backpropagation and Gradient Descent
 - Lecture 5: Speedup Neural Network creation through torch.nn
 - Lecture 6: Manage Vision data thanks to Torchvision
+- Lecture 7: Convolutional Neural Networks [1] with Squeeze-and-Excitation [2] Blocks 
 
 ## Docker setup
 I switched from Anaconda to Docker in order to provide the possibility to run the code on any kind of machine. Futhermore, docker is a tool which can improve the portability and the maintainability of the code within your business, thus this could also be an excuse to learn it.
@@ -97,5 +98,10 @@ As extensions to do this I use the following. Go to the VSCode marketplace (CTRL
 - ```ms-python.python```
 
 once the extensions have been installed and after launching the docker *run* script, in the menu on the left of VSCode you must select the whale icon (docker), and under the "individual containers" item you will find the container you have just launched with a green arrow next to it. By clicking with the right mouse button on it you will find "attach with VSCode", and this will open a new window for programming inside the docker.
+
+# Bibliography:
+- 1: Convolutional Networks for Images, Speech, and
+Time-Series [article](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=e26cc4a1c717653f323715d751c8dea7461aa105)
+- 2: Squeeze-and-Excitation Networks [article](https://openaccess.thecvf.com/content_cvpr_2018/papers/Hu_Squeeze-and-Excitation_Networks_CVPR_2018_paper.pdf)
 
 It's not over here, one last step is missing! Go to File>Open Folder -> enter "/home/your_username" as the path
